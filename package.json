@@ -2,7 +2,6 @@
   "name": "namaste-react-live",
   "version": "1.0.0",
   "description": "this is a react app",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
