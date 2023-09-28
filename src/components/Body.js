@@ -35,18 +35,18 @@ const Body = () => {
     setData(filteredData);
   };
   return (
-    <div className="m-4">
-      <input
-        type="text"
-        placeholder="Search.."
-        name="search"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        className="py-2 "
-      />
-      <button onClick={() => applySearch()}>Search</button>
-
-      <div className="flex flex-wrap gap-10">
+    <div className="m-4  ">
+      <div className="py-2 ">
+        <input
+          type="text"
+          placeholder="Search.."
+          name="search"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+        <button onClick={() => applySearch()}>Search</button>
+      </div>
+      <div className="flex flex-wrap gap-[25px] ">
         {data.map((restaurant) => (
           <Card {...restaurant.info} key={restaurant.info.id} />
         ))}

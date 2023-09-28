@@ -6,11 +6,11 @@ import Footer from "./components/Footer";
 
 const HeaderComponent = () => {
   return (
-    <React.Fragment>
+    <div className="w-[1600px] m-[auto]">
       <Header />
       <Body />
       <Footer />
-    </React.Fragment>
+    </div>
   );
 };
 
